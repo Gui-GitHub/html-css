@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex de Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .destaque{
+            background-color: lightcoral;
+        }
+
+        col.cnome{
+            background-color: lightcoral;
+        }
+
+        col.cgrupo{
+            background-color: lightgreen;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Exercícios de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col" class="destaque">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td class="destaque">Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td class="destaque">Guilherme</td>
+            <td>M</td>
+            <td>21</td>
+            <td>T.I.</td>
+        </tr>
+        <tr>
+            <td>André</td>
+            <td>M</td>
+            <td>21</td>
+            <td>Administrativo</td>
+        </tr>
+        <tr>
+            <td>Julia Moya</td>
+            <td>F</td>
+            <td>19</td>
+            <td>Biomédica</td>
+        </tr>
+        <tr>
+            <td>João Marinho</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Cozinheiro</td>
+        </tr>
+        <tr>
+            <td>Vania Cavalcante</td>
+            <td>F</td>
+            <td>61</td>
+            <td>Contabilidade</td>
+        </tr>
+    </table>
+</body>
+</html>
